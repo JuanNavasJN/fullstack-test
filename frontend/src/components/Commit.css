@@ -1,0 +1,41 @@
+.commit {
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.commit > .commit-header {
+  width: 100%;
+  background-color: #273450;
+  color: #f8ffff;
+  border-left: 4px solid #1aa0c2;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.commit > .commit-header h3 {
+  margin: 0;
+  overflow: hidden;
+}
+
+.commit > .commit-header .link-icon {
+  width: 22px;
+}
+
+.commit > .commit-metadata {
+  width: 85%;
+  background-color: #202b4285;
+  color: #ccd1e4;
+  padding: 0 20px;
+  margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .commit {
+    width: 350px;
+  }
+}

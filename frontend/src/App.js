@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Header from './components/Header';
 import Loading from './components/Loading';
+import Commit from './components/Commit';
 
 import './App.css';
 
@@ -19,10 +20,18 @@ const App = () => {
   return (
     <div>
       {data ? (
-        <Header
-          repositoryName={data.repositoryName}
-          repositoryUrl={data.repositoryUrl}
-        />
+        <>
+          <Header
+            repositoryName={data.repositoryName}
+            repositoryUrl={data.repositoryUrl}
+          />
+
+          <main className="commits">
+            {data.commits.map(com => (
+              <Commit key={com.sha} {...com} />
+            ))}
+          </main>
+        </>
       ) : (
         <Loading />
       )}
