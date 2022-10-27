@@ -34,6 +34,10 @@ $ npm install
 
 ## Required environment variables [example](./.env.example)
 
+[GitHub REST API Docs](https://docs.github.com/en/rest)
+
+[GitHub - Creating a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+
 ```bash
 GITHUB_TOKEN=
 GITHUB_REPO=
