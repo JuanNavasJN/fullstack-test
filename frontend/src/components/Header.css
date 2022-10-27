@@ -1,0 +1,32 @@
+header.header {
+  padding: 20px 30px;
+}
+
+header.header .repo-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+header.header .repo-link:hover {
+  color: #bfdaff;
+}
+
+header.header .repo-link img {
+  width: 28px;
+  margin: 0 5px;
+}
+
+@media (max-width: 450px) {
+  header.header {
+    padding: 20px;
+  }
+
+  header.header .repo-link {
+    font-size: 18px;
+  }
+}
