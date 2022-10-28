@@ -22,10 +22,6 @@
   overflow: hidden;
 }
 
-.commit > .commit-header .link-icon {
-  width: 22px;
-}
-
 .commit > .commit-metadata {
   width: 85%;
   background-color: #202b4285;

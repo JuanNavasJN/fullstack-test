@@ -2,21 +2,33 @@ header.header {
   padding: 20px 30px;
 }
 
-header.header .repo-link {
-  text-decoration: none;
-  color: #ffffff;
+header.header .repo.link {
   font-size: 24px;
   font-weight: bold;
+}
+
+header.header .link {
+  color: #ffffff;
+  text-decoration: none;
   display: flex;
   align-items: center;
   transition: 0.5s;
 }
 
-header.header .repo-link:hover {
+header.header .api-docs.link {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+header.header .api-docs.link .link-icon {
+  margin-left: 5px;
+}
+
+header.header .link:hover {
   color: #bfdaff;
 }
 
-header.header .repo-link img {
+header.header .repo.link img {
   width: 28px;
   margin: 0 5px;
 }

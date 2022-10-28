@@ -6,7 +6,7 @@ import Commit from './components/Commit';
 
 import './App.css';
 
-const URL_BASE = process.env.REACT_APP_BASE_API_URL;
+export const URL_BASE = process.env.REACT_APP_BASE_API_URL;
 
 const App = () => {
   const [data, setData] = useState();

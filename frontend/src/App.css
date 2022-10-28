@@ -3,3 +3,7 @@
   flex-direction: column;
   align-items: center;
 }
+
+.link-icon {
+  width: 22px;
+}
