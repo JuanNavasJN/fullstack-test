@@ -1,5 +1,5 @@
 import React from 'react';
-import linkIcon from '../assets/external-link.svg';
+import linkIcon from '../../assets/external-link.svg';
 
 import './Commit.css';
 
@@ -15,13 +15,16 @@ const Commit = ({ message, url, author }) => {
         </a>
       </div>
       <div className="commit-metadata">
-        {name && email && (
-          <p>
-            Author: {name} {'<'}
-            {email}
-            {'>'}
-          </p>
-        )}
+        <p>
+          {name && <>Author: {name}</>}
+          {email && (
+            <>
+              {' <'}
+              {email}
+              {'>'}
+            </>
+          )}
+        </p>
         {date && <p>Date: {new Date(date).toLocaleString()}</p>}
       </div>
     </div>

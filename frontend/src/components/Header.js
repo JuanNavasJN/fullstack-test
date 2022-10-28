@@ -1,9 +1,10 @@
 import React from 'react';
 import githubLogo from '../assets/github.svg';
-import { URL_BASE } from '../App';
 import linkIcon from '../assets/external-link.svg';
 
 import './Header.css';
+
+const URL_BASE = process.env.REACT_APP_BASE_API_URL;
 
 const Header = ({ repositoryUrl, repositoryName }) => {
   return (
