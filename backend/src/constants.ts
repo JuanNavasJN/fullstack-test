@@ -1,2 +1,5 @@
 export const OCTOKIT = 'OCTOKIT';
 export const GITHUB_API_ERROR = 'GITHUB_API_ERROR';
+export const GITHUB_TOKEN = 'GITHUB_TOKEN';
+export const GITHUB_REPO_OWNER = 'GITHUB_REPO_OWNER';
+export const GITHUB_REPO = 'GITHUB_REPO';

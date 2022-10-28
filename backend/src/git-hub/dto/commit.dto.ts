@@ -1,4 +1,4 @@
-class CommitDto {
+export class CommitDto {
   sha: string;
   message: string;
   url: string;
@@ -7,12 +7,4 @@ class CommitDto {
     email?: string;
     date?: string;
   };
-}
-
-export class CommitsDto {
-  repositoryName: string;
-
-  repositoryUrl: string;
-
-  commits: CommitDto[];
 }

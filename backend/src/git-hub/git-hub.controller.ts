@@ -1,11 +1,11 @@
 import { Controller, Get } from '@nestjs/common';
-import { AppService } from './app.service';
+import { GitHubService } from './git-hub.service';
 import { ApiResponse } from '@nestjs/swagger';
-import { GITHUB_API_ERROR } from './constants';
+import { GITHUB_API_ERROR } from '../constants';
 
 @Controller()
-export class AppController {
-  constructor(private readonly appService: AppService) {}
+export class GitHubController {
+  constructor(private readonly githubService: GitHubService) {}
 
   @Get('commits')
   @ApiResponse({
@@ -14,6 +14,6 @@ export class AppController {
     schema: { example: { statusCode: 500, message: GITHUB_API_ERROR } },
   })
   getCommits() {
-    return this.appService.getCommits();
+    return this.githubService.getCommits();
   }
 }
